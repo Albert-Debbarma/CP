@@ -1,0 +1,46 @@
+#include<iostream>
+ #include <string>
+#include <vector>
+#include <algorithm>
+#include <sstream>
+#include <queue>
+#include <deque>
+#include <bitset>
+#include <iterator>
+#include <list>
+#include <stack>
+#include <map>
+#include <set>
+#include <functional>
+#include <numeric>
+#include <utility>
+#include <limits>
+#include <time.h>
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+using namespace std ;
+#define ar array
+#define ll long long
+#define ld long double
+int main(){
+ios_base::sync_with_stdio(0);
+cin.tie(0); cout.tie(0);
+  int t ; cin>>t;
+  while (t--)
+  {
+    ll a1,a2,b1,b2,c1,c2,b,a, c;
+    cin>>a1>>a2>>b1>>b2>>c1>>c2;
+    a = a1+a2;
+    b = b1 +b2;
+    c = c1+c2;
+    if(a > b && a> c)
+    cout<< a<<endl;
+    else cout<< max(b, c)<<endl;
+
+  }
+  
+return 0 ;
+}
